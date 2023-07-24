@@ -1,0 +1,388 @@
+/**
+ * @name SoftMaterialRed
+ * @version 0.9.9
+ * @author TheCommieAxolotl#0001
+ * @authorId 538487970408300544
+ * @description A clean theme inspired by Google's Material Design Guidelines.
+ * @source https://github.com/TheCommieAxolotl/BetterDiscord-Stuff/tree/main/MaterialDesign
+ * @website https://thecommieaxolotl.github.io/BetterDiscord-Stuff/
+ * @invite g2KnUw7u7N
+ * @donate https://github.com/sponsors/TheCommieAxolotl/
+ * @BDEditor MaterialDesign
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source Code Pro:wght@550&display=swap');
+@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+@import url('https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/UserBadges.css');
+@import url('https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css');
+@import url('https://thecommieaxolotl.github.io/BetterDiscord-Stuff/MaterialDesign/Clients/betterdiscord.css');
+@import url('https://nyri4.github.io/Discolored/main.css');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css');
+
+:root {
+  --font-primary: Roboto;
+  --font-code: Source Code Pro;
+  --floating-background-opacity: 50;
+  --floating-background-blur: 0px;
+  --version: "0.9.9";
+  --version0_9_9: none;
+  --01dpShadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  --02dpShadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  --03dpShadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  --04dpShadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  --06dpShadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  --08dpShadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  --12dpShadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+  --16dpShadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
+  --24dpShadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+  --brand-experiment: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.75% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-100: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.98% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-130: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.961% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-160: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.942% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-200: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.923% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-230: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.903% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-260: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.884% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-300: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.865% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-330: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.846% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-360: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.827% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-400: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.80% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-430: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.78% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-460: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(0.769% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-500: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-530: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.69% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-560: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.63% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-600: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.57% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-630: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.51% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-660: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.45% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-700: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.39% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-730: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.33% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-760: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.27% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-800: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.21% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-830: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.15% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-860: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.9% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-900: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.3% * var(--skin-accent-l, 100)), calc(1% * var(--skin-accent-a, 100)));
+  --brand-experiment-05a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.0005 * var(--skin-accent-a, 100)));
+  --brand-experiment-10a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.001 * var(--skin-accent-a, 100)));
+  --brand-experiment-15a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.0015 * var(--skin-accent-a, 100)));
+  --brand-experiment-20a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.002 * var(--skin-accent-a, 100)));
+  --brand-experiment-25a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.0025 * var(--skin-accent-a, 100)));
+  --brand-experiment-30a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.003 * var(--skin-accent-a, 100)));
+  --brand-experiment-35a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.0035 * var(--skin-accent-a, 100)));
+  --brand-experiment-40a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.004 * var(--skin-accent-a, 100)));
+  --brand-experiment-45a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.0045 * var(--skin-accent-a, 100)));
+  --brand-experiment-50a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.005 * var(--skin-accent-a, 100)));
+  --brand-experiment-55a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.0055 * var(--skin-accent-a, 100)));
+  --brand-experiment-60a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.006 * var(--skin-accent-a, 100)));
+  --brand-experiment-65a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.0065 * var(--skin-accent-a, 100)));
+  --brand-experiment-70a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.007 * var(--skin-accent-a, 100)));
+  --brand-experiment-75a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.0075 * var(--skin-accent-a, 100)));
+  --brand-experiment-80a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.008 * var(--skin-accent-a, 100)));
+  --brand-experiment-85a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.0085 * var(--skin-accent-a, 100)));
+  --brand-experiment-90a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.009 * var(--skin-accent-a, 100)));
+  --brand-experiment-95a: hsla(var(--skin-accent-h, 264), calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), calc(00.75% * var(--skin-accent-l, 100)), calc(0.0095 * var(--skin-accent-a, 100)));
+  --columns: 2;
+  --guildgap: 1;
+  --aligndms: 0;
+}
+
+.theme-dark {
+  --skin-accent-h: 360;
+  --skin-accent-s: 100%;
+  --skin-accent-l: 20;
+  --skin-accent-a: 63;
+  --skin-background-h: 0;
+  --skin-background-s: 23%;
+  --skin-background-l: 100;
+  --skin-background-a: 100;
+  --switch-checked-background: 4,90%,58%;
+  --switch-unchecked-background: #74796e33;
+  --switch-unchecked-color: #74796e;
+  --skin-name: "Default";
+  --skin-author: "TheCommieAxolotl";
+  --00dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.07% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --01dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.11% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --02dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.13% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --03dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.14% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --04dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.15% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --06dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.17% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --08dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.18% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --12dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.19% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --16dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.2% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --24dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.22% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --26dp: hsla(var(--skin-background-h, 0), calc(var(--saturation-factor, 1) * var(--skin-background-s, 0%)), calc(0.27% * var(--skin-background-l, 0)), calc(1% * var(--skin-background-a, 100)));
+  --background-primary: var(--02dp);
+  --background-secondary: var(--01dp);
+  --background-mobile-secondary: var(--01dp);
+  --background-accent: var(--12dp);
+  --background-tertiary: var(--00dp);
+  --background-secondary-alt: var(--06dp);
+  --channeltextarea-background: var(--24dp);
+  --background-floating: var(--24dp);
+  --background-modifier-selected: var(--06dp);
+  --background-modifier-hover: var(--02dp);
+  --background-modifier-active: var(--04dp);
+  --background-mentioned: transparent;
+  --background-mentioned-hover: #e7c21f04;
+  --info-warning-foreground: hsl(54, calc(var(--saturation-factor, 1) * var(--skin-accent-s, 84%)), 75%);
+  --scrollbar-thin-thumb: var(--12dp);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: var(--12dp);
+  --scrollbar-auto-track: var(--04dp);
+  --input-background: var(--08dp);
+  --switch-checked-background: hsl(101, calc(var(--saturation-factor) * 54%), 27%);
+  --switch-unchecked-background: #74796e33;
+  --switch-unchecked-color: #74796e;
+}
+
+.theme-light {
+  --skin-accent-h: 360;
+  --skin-accent-s: 100%;
+  --skin-accent-l: 20;
+  --skin-accent-a: 63;
+  --switch-checked-background: 4,90%,58%;
+  --switch-unchecked-background: #74796e33;
+  --switch-unchecked-color: #74796e;
+  --skin-name: "Default Light";
+  --skin-author: "TheCommieAxolotl";
+}
+
+/* Any custom CSS below here */
+
+
+/* Emoji Replace (Apple) */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
+
+
+/* Settings Module */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
+
+:root {
+	--settingsmodalbackground: 	transparent;			/* default:	transparent		(lowest bg color of changed windows, change it in case another theme turns them transparent)	*/
+	--settingsmodalwidth: 		960px;					/* default:	960px			(width of the settings modal, px/vw)															*/
+	--settingsmodalheight: 		80vh;					/* default:	80vh			(height of the settings modal, px/vh)															*/
+}
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/ThemeDevBadge.css);
+
+:root {
+	--settingsmodalbackground: transparent;
+	--settingsmodalwidth: 960px;
+	--settingsmodalheight: 80vh;
+}
+
+
+#app-mount .baseLayer-W6S8cY {
+	opacity: 1 !important;
+	transform: unset !important;
+	will-change: unset !important;
+}
+#app-mount .stop-animations * {
+	transition-property: inherit !important;
+	animation: inherit !important;
+}
+#app-mount .layer-86YKbF.stop-animations:first-child::after {
+	content: "" !important;
+	position: fixed !important;
+	background: rgb(0, 0, 0) !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	opacity: 0.85 !important;
+	z-index: 999 !important;
+	pointer-events: none !important;
+}
+
+#app-mount .layer-86YKbF ~ .layer-86YKbF {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: var(--settingsmodalbackground) !important;
+	border-radius: 5px !important;
+	box-shadow: var(--elevation-high) !important;
+	width: var(--settingsmodalwidth) !important;
+	height: var(--settingsmodalheight) !important;
+	margin: auto !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	contain: unset !important;
+	z-index: 1000 !important;
+	--settingsiconsadditionalsize: var(--use-settingsicons, 0) * (var(--settingsicons-size, 0px) + var(--settingsicons-gap, 0px));
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF > div,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .standardSidebarView-E9Pc3j {
+	position: static !important;
+	border-radius: unset !important;
+	width: 100% !important;
+	height: 100% !important;
+	margin: unset !important;
+	padding: unset !important;
+	overflow: hidden !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .sidebarRegion-1VBisG,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .sidebarRegionScroller-FXiQOh {
+	flex: 0 0 auto !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .sidebar-nqHbhN {
+	width: 218px !important;
+	padding: 20px 6px 20px 20px !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .contentColumnDefault-3eyv5o {
+	padding: 20px 40px !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .repo-k8F4Sd {
+	max-width: calc(var(--settingsmodalwidth) - 226px - var(--settingsiconsadditionalsize)) !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .repoHeader-2KfNvH {
+	padding-bottom: 0 !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .repoHeader-2KfNvH .tabBar-2StdUa {
+	gap: 30px !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .repoHeader-2KfNvH .quickSelectLabel-ArUyd9 {
+	font-size: 12px !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .repoScroller-9JnAPs {
+	padding-top: 0 !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .sidebar-3K3Z4C {
+	height: var(--settingsmodalheight) !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .standardSidebarView-E9Pc3j .editor {
+	height: calc(var(--settingsmodalheight) - 120px) !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V .tools-kIrEGr,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V .container-O54IuJ,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V .closeButton-PCZcma {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+	width: 100% !important;
+	max-width: unset !important;
+	height: 100% !important;
+	max-height: unset !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	opacity: 0 !important;
+	cursor: default !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V {
+	position: fixed !important;
+	top: 22px !important;
+	z-index: -1 !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .settingsToolbar-wu4yfQ {
+	display: none !important;
+}
+
+#app-mount .layer-86YKbF ~ .layer-86YKbF .accountProfileCard-lbN7n- {
+	max-width: calc(var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize)) !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm {
+	gap: 30px !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .sectionsContainer-3BlPu4,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .editor-328F1U,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .preview-sMYs9f {
+	min-width: calc((var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2) !important;
+	max-width: calc((var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2) !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .sectionsContainer-3BlPu4,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .editor-328F1U,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .preview-sMYs9f {
+	min-width: calc((var(--settingsmodalwidth) - 344px - var(--settingsiconsadditionalsize)) / 2) !important;
+	max-width: calc((var(--settingsmodalwidth) - 344px - var(--settingsiconsadditionalsize)) / 2) !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .preview-sMYs9f .userPopoutOuter-1OHwPL {
+	width: calc((var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2) !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .preview-sMYs9f .userPopoutOuter-1OHwPL {
+	width: calc((var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2) !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .preview-sMYs9f .userPopoutOuter-1OHwPL,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .preview-sMYs9f .userPopoutOuter-1OHwPL {
+	min-width: unset !important;
+	max-width: 340px !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .preview-sMYs9f .userPopoutInner-nv9Y92 {
+	overflow: hidden !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .settingsContainer-36qZZ9,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .guildsSection-30CJxX {
+	max-width: calc(var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize)) !important;
+}
+
+#app-mount .root-2zfUH6 {
+	position: fixed !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: var(--settingsmodalbackground) !important;
+	border-radius: 5px !important;
+	box-shadow: var(--elevation-high) !important;
+	width: var(--settingsmodalwidth) !important;
+	height: var(--settingsmodalheight) !important;
+	margin: auto !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	contain: unset !important;
+	z-index: 1000 !important;
+}
+#app-mount .root-2zfUH6.enterDone-menWZ8 {
+	transform: unset !important;
+}
+#app-mount .perksModal-CLcR1c {
+	position: static !important;
+	border-radius: unset !important;
+	width: 100% !important;
+	height: 100% !important;
+	margin: unset !important;
+	padding: unset !important;
+}
+#app-mount .perksModal-CLcR1c::before {
+	width: var(--settingsmodalwidth) !important;
+	height: var(--settingsmodalheight) !important;
+	margin: auto !important;
+}
+#app-mount .perksModalContentWrapper-3RHugb {
+	padding: 10px 0 10px !important;
+}
+#app-mount .root-2zfUH6 .perksModal-CLcR1c .carousel-3dvee9 {
+	margin-left: calc(-0.5 * (100vw - var(--settingsmodalwidth))) !important;
+}
+#app-mount .root-2zfUH6 .closeIconWrapper-1W_w1-,
+#app-mount .root-2zfUH6 .closeIconWrapper-1W_w1- .container-O54IuJ,
+#app-mount .root-2zfUH6 .closeIconWrapper-1W_w1- .closeButton-PCZcma {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+	width: 100% !important;
+	max-width: unset !important;
+	height: 100% !important;
+	max-height: unset !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	opacity: 0 !important;
+	cursor: default !important;
+}
+#app-mount .root-2zfUH6 .closeIconWrapper-1W_w1- {
+	position: fixed !important;
+	top: 22px !important;
+	z-index: -1 !important;
+}
